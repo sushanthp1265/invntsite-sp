@@ -1,16 +1,79 @@
-# React + Vite
+# INVNTSite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Smart inventory tracking for clinical teams.**
 
-Currently, two official plugins are available:
+A full-stack web application designed for hospitals and clinics to manage, track, and audit medical supplies across daily and weekly workflows. Built with React and Firebase, deployed to production on Firebase Hosting.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live Demo:** [https://invntsite.web.app](https://invntsite.web.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Authentication** — Secure sign up and sign in with Firebase Auth
+- **Facility Onboarding** — Configures inventory and shift tracking based on facility type (Hospital or Clinic)
+- **Dashboard** — At-a-glance view of today's log status, low stock alerts, total supplies tracked, and weekly check reminders
+- **Supplies Management** — View, search, and filter inventory by category (PPE, Medication, Equipment, Consumable) with par-level tracking
+- **Daily Supply Check** — Log supply volume levels by shift and save to Firestore with deterministic document IDs
+- **Weekly Supply Check** — Count supplies by category against par levels with discrepancy detection and progress saving
+- **Analytics** — Track average daily patients, supplies needing reorder, weekly check history, and usage trends
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+**Frontend:** React, Recharts
+
+**Backend:** Firebase, Firestore
+
+**Deployment:** Firebase Hosting
+
+---
+
+## Screenshots
+
+| Dashboard | Supplies | Weekly Check |
+|-----------|----------|--------------|
+| ![Dashboard](screenshots/dashboard.png) | ![Supplies](screenshots/supplies.png) | ![Weekly Check](screenshots/weekly-check.png) |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- Firebase CLI (`npm install -g firebase-tools`)
+
+### Installation
+
+```bash
+git clone https://github.com/sushanthp1265/invntsite-sp.git
+cd invntsite-sp
+npm install
+```
+
+### Running Locally
+
+```bash
+npm run dev
+```
+
+### Deployment
+
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+---
+
+## Project Status
+
+Actively in development. Core inventory tracking screens are fully built and deployed. Upcoming features include AI-powered shift handoff summaries, smart reorder predictions, multi-organization support, and a React Native mobile app.
+
+---
+
+## Author
+
+Sushanth Penumala — [p.sushanth26@gmail.com](mailto:p.sushanth26@gmail.com) — [LinkedIn](https://linkedin.com)
