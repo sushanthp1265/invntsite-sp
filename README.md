@@ -1,79 +1,36 @@
 # INVNTSite
+### Smart inventory tracking for clinical teams
 
-**Smart inventory tracking for clinical teams.**
+A full-stack web application that helps hospitals and clinics manage, track, and audit medical supplies across daily and weekly workflows. Designed with an iPad-optimized interface for fast, shift-based logging by clinical staff.
 
-A full-stack web application designed for hospitals and clinics to manage, track, and audit medical supplies across daily and weekly workflows. Built with React and Firebase, deployed to production on Firebase Hosting.
-
-**Live Demo:** [https://invntsite.web.app](https://invntsite.web.app)
-
----
-
-## Features
-
-- **Authentication** — Secure sign up and sign in with Firebase Auth
-- **Facility Onboarding** — Configures inventory and shift tracking based on facility type (Hospital or Clinic)
-- **Dashboard** — At-a-glance view of today's log status, low stock alerts, total supplies tracked, and weekly check reminders
-- **Supplies Management** — View, search, and filter inventory by category (PPE, Medication, Equipment, Consumable) with par-level tracking
-- **Daily Supply Check** — Log supply volume levels by shift and save to Firestore with deterministic document IDs
-- **Weekly Supply Check** — Count supplies by category against par levels with discrepancy detection and progress saving
-- **Analytics** — Track average daily patients, supplies needing reorder, weekly check history, and usage trends
+🔗 **[Live Demo](https://invntsite.web.app)**
 
 ---
+
+## The Problem
+
+Clinical teams manually track medical supply levels using paper logs or spreadsheets, leading to stockouts, missed reorders, and wasted time during busy shifts. INVNTSite replaces that process with a structured, mobile-friendly digital workflow.
+
+## What It Does
+
+- **Dashboard** — Real-time summary of supply status, low stock alerts, and pending daily and weekly checks
+- **Supplies Management** — Searchable inventory with category filters (PPE, Medication, Equipment, Consumable) and par-level tracking
+- **Daily Supply Check** — Shift-by-shift volume logging saved to the cloud
+- **Weekly Supply Check** — Full count by category with automatic discrepancy detection against par levels
+- **Analytics** — Tracks average daily patients, reorder needs, and weekly check history
+- **Authentication** — Secure sign up and sign in with facility type configuration on first login
 
 ## Tech Stack
 
-**Frontend:** React, Recharts
+| Layer | Technologies |
+|-------|-------------|
+| Frontend | React, Recharts |
+| Backend | Firebase, Firestore |
+| Deployment | Firebase Hosting |
 
-**Backend:** Firebase, Firestore
+## Status
 
-**Deployment:** Firebase Hosting
-
+Core features fully built and deployed. Actively developing AI-powered shift handoff summaries, smart reorder predictions, and multi-organization support.
 ---
 
-## Screenshots
-
-| Dashboard | Supplies | Weekly Check |
-|-----------|----------|--------------|
-| ![Dashboard](screenshots/dashboard.png) | ![Supplies](screenshots/supplies.png) | ![Weekly Check](screenshots/weekly-check.png) |
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js
-- Firebase CLI (`npm install -g firebase-tools`)
-
-### Installation
-
-```bash
-git clone https://github.com/sushanthp1265/invntsite-sp.git
-cd invntsite-sp
-npm install
-```
-
-### Running Locally
-
-```bash
-npm run dev
-```
-
-### Deployment
-
-```bash
-npm run build
-firebase deploy --only hosting
-```
-
----
-
-## Project Status
-
-Actively in development. Core inventory tracking screens are fully built and deployed. Upcoming features include AI-powered shift handoff summaries, smart reorder predictions, multi-organization support, and a React Native mobile app.
-
----
-
-## Author
-
-Sushanth Penumala — [p.sushanth26@gmail.com](mailto:p.sushanth26@gmail.com) — [LinkedIn](https://linkedin.com)
+*Built by [Sushanth Penumala](mailto:p.sushanth26@gmail.com)*
