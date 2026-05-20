@@ -30,7 +30,6 @@ Clinical teams manually track medical supply levels using paper logs or spreadsh
 
 ## Status
 
-**Core features fully built and deployed. Actively developing AI-powered shift handoff summaries, smart reorder predictions, and multi-organization support.
-**---
+Core features fully built and deployed. Actively developing AI-powered shift handoff summaries, smart reorder predictions, and multi-organization support.
 
 *Built by [Sushanth Penumala](mailto:p.sushanth26@gmail.com)*
