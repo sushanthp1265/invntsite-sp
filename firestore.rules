@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Organization document — locked to the single hardcoded org
+    match /organizations/org-001 {
+      allow read, write: if true;
+    }
+
+    // Supplies — only documents belonging to org-001
+    match /supplies/{supplyId} {
+      allow read, update, delete: if resource.data.orgId == 'org-001';
+      allow create: if request.resource.data.orgId == 'org-001';
+    }
+
+    // Shift logs — only documents belonging to org-001
+    match /shiftLogs/{logId} {
+      allow read, update, delete: if resource.data.orgId == 'org-001';
+      allow create: if request.resource.data.orgId == 'org-001';
+    }
+
+    // Deny everything else
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+  }
+}

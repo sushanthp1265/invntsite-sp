@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal-primary: #1D9E75;
+  --color-teal-light: #E8F7F2;
+  --color-teal-dark: #167A5A;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f8f9fa;
+}
+
+#root {
+  max-width: 768px;
+  margin: 0 auto;
+  min-height: 100svh;
+  background: white;
+  position: relative;
+}
