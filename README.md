@@ -9,7 +9,7 @@ A full-stack web application that helps hospitals and clinics manage, track, and
 
 ## The Problem
 
-Clinical teams manually track medical supply levels using paper logs or spreadsheets, leading to stockouts, missed reorders, and wasted time during busy shifts. INVNTSite replaces that process with a structured, mobile-friendly digital workflow.
+Clinical teams manually track medical supply levels using paper logs or spreadsheets, leading to stockouts, missed reorders, and wasted time during busy shifts. invntsite replaces that process with a structured, mobile-friendly digital workflow.
 
 ## What It Does
 
