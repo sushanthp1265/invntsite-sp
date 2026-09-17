@@ -1,4 +1,4 @@
-# INVNTSite
+# invntsite
 ### Smart inventory tracking for clinical teams
 
 A full-stack web application that helps hospitals and clinics manage, track, and audit medical supplies across daily and weekly workflows. Designed with an iPad-optimized interface for fast, shift-based logging by clinical staff.
